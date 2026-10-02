@@ -7,7 +7,7 @@
 [![Scenarios](https://img.shields.io/badge/Scenarios-10%2C000-orange.svg)]()
 
 
-A complete, production-grade Monte-Carlo decision engine that chooses optimal 3-month coffee purchase quantities under joint uncertainty of:
+A Monte Carlo decision engine for optimizing 3-month coffee procurement under joint uncertainty in:
 
 - Global coffee price (GBP)
 - IRR exchange rate
