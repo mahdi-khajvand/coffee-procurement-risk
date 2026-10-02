@@ -1,0 +1,33 @@
+# Coffee Import Risk Decision System - Configuration
+# Iran, calibrated on Farvardin-Tir 1401 market data
+
+business:
+  initial_inventory_ton: 30.0
+  holding_cost_irr_per_ton_month: 50000000   # 50 million IRR
+  emergency_premium: 0.20
+  cost_of_capital_monthly: 0.025             # 2.5% per month (~34% annual)
+  warehouse_capacity_ton: 150.0
+  budget_max_irr: 100000000000               # 100 billion IRR
+  base_demand: [30.0, 30.0, 40.0]             # expected monthly demand (ton)
+  demand_cv: 0.15
+  price_elasticity: -0.45                    # demand responds to real price
+  safety_stock_target: 15.0                  # for adaptive policies
+
+simulation:
+  n_scenarios: 10000
+  n_months: 3
+  trading_days_per_month: 20
+  seed: 42
+  cvar_alpha: 0.95
+
+market:
+  # Will be overwritten by data loader with actual last observation
+  current_coffee_gbp: 2113.0
+  current_gbp_irr: 389190.0
+
+paths:
+  data_dir: data
+  output_dir: outputs
+  figures_dir: outputs/figures
+  tables_dir: outputs/tables
+  reports_dir: outputs/reports

@@ -1,0 +1,9 @@
+Policy,Type,E[Cost] bn,Median bn,CVaR95 bn,VaR95 bn,Stockout %,E[End Inventory] t,E[Cash] bn
+A_BuyNow,Fixed,64.96,64.55,84.95,80.47,34.1,6.3,60.32
+B_Wait,Fixed,62.04,61.37,83.02,77.91,57.6,7.4,64.91
+C_Split,Fixed,63.3,62.68,82.5,77.97,34.1,6.3,62.61
+D_FrontLoad,Fixed,64.45,64.11,82.18,77.94,9.7,14.2,70.81
+E_SafetyStock,Fixed,64.93,64.64,81.87,78.04,1.8,23.7,80.47
+F_HeavyFront,Fixed,65.82,65.72,83.35,79.59,1.8,23.7,79.21
+G_Balanced,Fixed,64.32,63.98,81.55,77.44,1.8,23.7,81.3
+H_Adaptive,Adaptive,66.2,66.36,84.61,80.6,2.7,17.5,71.75
